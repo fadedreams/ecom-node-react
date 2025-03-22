@@ -256,8 +256,8 @@ const Products = () => {
                             key={index}
                             onClick={() => handlePageChange(index + 1)}
                             className={`px-3 py-1 rounded-full border border-gray-300 ${currentPage === index + 1
-                                    ? 'bg-gray-600 text-white'
-                                    : 'text-gray-600 hover:bg-gray-100'
+                                ? 'bg-gray-600 text-white'
+                                : 'text-gray-600 hover:bg-gray-100'
                                 }`}
                         >
                             {index + 1}
