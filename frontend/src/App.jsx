@@ -1,8 +1,11 @@
-// App.jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './components/Header'; // Adjust import path if needed
-import Footer from './components/Footer'; // Adjust import path if needed
-import Login from './components/Login'; // Adjust import path if needed
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import Product from './pages/Product';
+import Products from './pages/Products';
 
 function Home() {
     return <h1>Home Page</h1>;
@@ -15,14 +18,21 @@ function About() {
 function App() {
     return (
         <BrowserRouter>
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/login" element={<Login />} />
-
-            </Routes>
-            <Footer />
+            <div className="flex flex-col min-h-screen">
+                <Header />
+                <main className="flex-grow">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/forgot" element={<ForgotPassword />} />
+                        <Route path="/product" element={<Product />} />
+                        <Route path="/products" element={<Products />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
         </BrowserRouter>
     );
 }

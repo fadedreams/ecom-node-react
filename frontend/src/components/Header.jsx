@@ -42,7 +42,7 @@ const Header = () => {
                 <div className="flex items-center gap-6">
                     <span className="text-2xl cursor-pointer">
                         <FaShoppingCart />
-                        <div className='bg-red-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center absolute top-3 right-7'>
+                        <div className='bg-gray-600 text-white w-5 h-5 rounded-full p-1 flex items-center justify-center absolute top-3 right-7'>
                             <p className='text-sm'>0</p>
                         </div>
                     </span>
