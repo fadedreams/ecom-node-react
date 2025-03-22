@@ -15,6 +15,8 @@ import AdminEditProduct from './pages/AdminEditProduct';
 import AdminCategory from './pages/AdminCategory';
 import AdminAddCategory from './pages/AdminAddCategory';
 import AdminEditCategory from './pages/AdminEditCategory';
+import AdminUsers from './pages/AdminUsers';
+import AdminEditUser from './pages/AdminEditUser';
 
 function Home() {
     return <h1>Home Page</h1>;
@@ -79,6 +81,8 @@ function App() {
                     <Route path="/admin/cats" element={<AdminCategory />} />
                     <Route path="/admin/cats/add" element={<AdminAddCategory />} />
                     <Route path="/admin/cats/edit" element={<AdminEditCategory />} />
+                    <Route path="/admin/users" element={<AdminUsers />} />
+                    <Route path="/admin/users/edit" element={<AdminEditUser />} />
                 </Route>
             </Routes>
         </BrowserRouter>
